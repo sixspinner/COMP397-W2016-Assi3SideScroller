@@ -24,7 +24,7 @@ var objects;
                 this._reset(this._topBounds);
             }
         };
-        // reset the ocean offscreen
+        // reset the island offscreen
         Island.prototype._reset = function (value) {
             this.y = value;
             this.x = Math.floor(Math.random() * this._rightBounds) + this._leftBounds;

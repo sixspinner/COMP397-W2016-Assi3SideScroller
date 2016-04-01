@@ -21,7 +21,7 @@ module objects {
             }
         }
         
-        // reset the ocean offscreen
+        // reset the island offscreen
         protected _reset(value:number):void {          
             this.y = value;
             this.x = Math.floor(Math.random() * this._rightBounds) + this._leftBounds;

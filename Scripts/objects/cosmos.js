@@ -5,37 +5,36 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var objects;
 (function (objects) {
-    // OCEAN CLASS ++++++++++++++++++++++++++++++++++++
-    var Ocean = (function (_super) {
-        __extends(Ocean, _super);
+    // COSMOS CLASS ++++++++++++++++++++++++++++++++++++
+    var Cosmos = (function (_super) {
+        __extends(Cosmos, _super);
         // PRIVATE INSTANCE VARIABLES +++++++++++++++++
         // CONSTRUCTOR METHOD +++++++++++++++++++++++++
-        function Ocean() {
+        function Cosmos() {
             _super.call(this, "cosmos");
-            this._speed.x = 5; //ocean speed
+            this._speed.x = 5; //cosmos speed
             this._reset(-1280);
         }
         // PRIVATE METHODS ++++++++++++++++++++++++++++
-        Ocean.prototype._checkBounds = function (value) {
-            // check to see if the top of the ocean 
-            // is met the top of the scene
+        Cosmos.prototype._checkBounds = function (value) {
+            // check to see if the end of the cosmos image has met end of screen
             if (this.x >= value) {
                 this._reset(-1280);
             }
         };
-        // reset the ocean offscreen
-        Ocean.prototype._reset = function (value) {
+        // reset the cosmos offscreen
+        Cosmos.prototype._reset = function (value) {
             this.x = value;
         };
         // PUBLIC METHODS ++++++++++++++++++++++++++++++
-        Ocean.prototype.update = function () {
-            // scroll the ocean 5 px per frame
+        Cosmos.prototype.update = function () {
+            // scroll the cosmos 5 px per frame
             this.x += this._speed.x;
             this._checkBounds(0);
         };
-        return Ocean;
+        return Cosmos;
     }(objects.GameObject));
-    objects.Ocean = Ocean;
+    objects.Cosmos = Cosmos;
 })(objects || (objects = {}));
 
-//# sourceMappingURL=ocean.js.map
+//# sourceMappingURL=cosmos.js.map

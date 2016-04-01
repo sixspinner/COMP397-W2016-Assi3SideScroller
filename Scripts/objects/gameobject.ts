@@ -48,7 +48,7 @@ module objects {
         // PUBLIC METHODS ++++++++++++++++++++++++++++++
         public update():void {
             var boundValue:number = 0;
-            // scroll the ocean 5 px per frame
+            // scroll the object by designated speed (speed.x = desired speed)
             this.y += this._speed.y;
             this._checkBounds(boundValue);
         }

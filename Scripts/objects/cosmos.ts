@@ -1,27 +1,28 @@
 module objects {
-    // OCEAN CLASS ++++++++++++++++++++++++++++++++++++
-    export class Ocean extends objects.GameObject {
+    // COSMOS CLASS ++++++++++++++++++++++++++++++++++++
+    export class Cosmos extends objects.GameObject {
         // PRIVATE INSTANCE VARIABLES +++++++++++++++++
         
         // CONSTRUCTOR METHOD +++++++++++++++++++++++++
         constructor() {
             super("cosmos");
             
-           this._speed.x = 5; //ocean speed
+           this._speed.x = 5; //cosmos speed
            this._reset(-1280);
         }
         
         // PRIVATE METHODS ++++++++++++++++++++++++++++
         protected _checkBounds(value:number):void {
-            // check to see if the top of the ocean 
-            // is met the top of the scene
+            // check to see if the end of the cosmos image has met end of screen
+           
+            
             
             if(this.x >= value) {
                 this._reset(-1280);
             }
         }
         
-        // reset the ocean offscreen
+        // reset the cosmos offscreen
         protected _reset(value:number):void {
             this.x = value;
         }
@@ -29,7 +30,7 @@ module objects {
         
         // PUBLIC METHODS ++++++++++++++++++++++++++++++
         public update():void {
-            // scroll the ocean 5 px per frame
+            // scroll the cosmos 5 px per frame
             this.x += this._speed.x;
             this._checkBounds(0);
         }
