@@ -25,7 +25,7 @@ var objects;
         GameObject.prototype._checkBounds = function (value) {
             var resetValue = 0;
             // check if y value has met the reset criteria
-            if (this.y >= value) {
+            if (this.x >= value) {
                 this._reset(resetValue);
             }
         };
@@ -37,7 +37,7 @@ var objects;
         GameObject.prototype.update = function () {
             var boundValue = 0;
             // scroll the object by designated speed (speed.x = desired speed)
-            this.y += this._speed.y;
+            this.x += this._speed.x;
             this._checkBounds(boundValue);
         };
         return GameObject;

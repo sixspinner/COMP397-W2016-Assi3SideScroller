@@ -1,4 +1,21 @@
-﻿/// <reference path = "_reference.ts" />
+﻿/*===============================================================================================
+File:_______________| game.ts
+Author:             | Tom Tsiliopoulus
+Last Modified by:   | Sean R. Smith
+Date Last Modified: | April 1, 2015
+-------------------------------------------------------------------------------------------------
+Description:
+This file is the engine of the game
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+Revision History:
+-Replaced ocean asset with cosmos asset
+-Remove plane, add hubble telescope avatar
+
+================================================================================================*/
+
+
+/// <reference path = "_reference.ts" />
 
 // global variables
 var assets: createjs.LoadQueue;
@@ -19,8 +36,8 @@ var assetData:objects.Asset[] = [
     {id: "StartButton", src:"../../Assets/images/StartButton.png"},
     {id: "RestartButton", src:"../../Assets/images/RestartButton.png"},
     {id: "BackButton", src:"../../Assets/images/BackButton.png"},
-    {id: "cosmos", src:"../../Assets/images/Background.png"},
-    {id: "plane", src:"../../Assets/images/plane.png"},
+    {id: "cosmos", src:"../../Assets/images/Background.png"},//---------background
+    {id: "hubble", src:"../../Assets/images/GameHubble.png"}, //------------ player
     {id: "island", src:"../../Assets/images/island.png"},
     {id: "cloud", src:"../../Assets/images/cloud.png"},
 ];

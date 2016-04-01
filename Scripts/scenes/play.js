@@ -1,3 +1,17 @@
+/*===============================================================================================
+File:_________________| play.ts
+Author:               | Tom Tsiliopoulus
+Last Modified by:     | Sean R. Smith
+Date: Last Modified:  | April 1, 2015
+-------------------------------------------------------------------------------------------------
+Description:
+This file builds all the objects into the game play scene.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Revision History:
+-Replaced Ocean game worled with space.
+
+================================================================================================*/
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }

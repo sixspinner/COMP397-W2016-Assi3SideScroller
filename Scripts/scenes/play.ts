@@ -1,3 +1,19 @@
+/*===============================================================================================
+File:_________________| play.ts
+Author:               | Tom Tsiliopoulus
+Last Modified by:     | Sean R. Smith
+Date: Last Modified:  | April 1, 2015
+-------------------------------------------------------------------------------------------------
+Description:
+This file builds all the objects into the game play scene.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+Revision History:
+-Replaced Ocean game worled with space.
+
+================================================================================================*/
+
+
 // PLAY SCENE
 module scenes {
     export class Play extends objects.Scene {

@@ -1,3 +1,20 @@
+/*===============================================================================================
+File:_______________| player.ts
+Author:             | Tom Tsiliopoulus
+Last Modified by:   | Sean R. Smith
+Date Last Modified: | April 1, 2015
+-------------------------------------------------------------------------------------------------
+Description:
+This file holds the player class which is used to create the avatar and define its attributes.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+Revision History:
+-Replaced the plane with the telescope avatar
+-Set locaion of hubble
+-Set Motion of hubble
+
+================================================================================================*/
+
+
 module objects {
     // PLAYER CLASS ++++++++++++++++++++++++++++++
     export class Player extends createjs.Bitmap {
@@ -9,7 +26,7 @@ module objects {
         public width: number;
         public height: number;
         constructor() {
-            super(assets.getResult("plane"));
+            super(assets.getResult("hubble"));
 
             this.width = this.getBounds().width;
             this.height = this.getBounds().height;
@@ -20,7 +37,7 @@ module objects {
             this._leftBounds = this.width * 0.5;
             this._rightBounds = config.Screen.WIDTH - (this.width * 0.5);
 
-            this.y = 430;
+            this.x = 2;
         }
 
         // PRIVATE METHODS
@@ -37,7 +54,7 @@ module objects {
 
         // PUBLIC METHODS
         public update(): void {
-            this.x = stage.mouseX;
+            this.y = stage.mouseY;
             this._checkBounds();
         }
     }
