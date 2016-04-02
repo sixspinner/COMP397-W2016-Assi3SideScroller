@@ -23,7 +23,9 @@ Revision History:
 /// <reference path="../objects/scene.ts" />
 
 /// <reference path="../objects/gameobject.ts" />
-/// <reference path="../objects/cosmos.ts" />-----------------
+/// <reference path="../objects/cosmos.ts" />-----------------cosmos
+/// <reference path="../objects/camera.ts" />-----------------cam
+/// <reference path="../objects/trash.ts" />-----------------trash
 /// <reference path="../objects/island.ts"/>
 /// <reference path="../objects/cloud.ts"/>
 /// <reference path="../objects/player.ts" />

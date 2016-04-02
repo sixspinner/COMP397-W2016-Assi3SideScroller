@@ -1,3 +1,19 @@
+/*===============================================================================================
+File:_________________| gameobjects.ts
+Author:               | Sean R. Smith
+Last Modified by:     | Sean R. Smith
+Date: Last Modified:  | April 1, 2015
+-------------------------------------------------------------------------------------------------
+Description:
+This file holds the superclass used to create objects in game.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Revision History:
+-Created File: camera class with constructor, checkBounds, reset and update,
+    and set sideways motion.
+
+
+================================================================================================*/
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -16,8 +32,8 @@ var objects;
             this.height = this.getBounds().height;
             this.centerX = this.width * 0.5;
             this.centerY = this.height * 0.5;
-            this._topBounds = -this.height;
-            this._bottomBounds = config.Screen.HEIGHT + this.height;
+            this._topBounds = 0;
+            this._bottomBounds = config.Screen.HEIGHT - this.height;
             this._leftBounds = 0;
             this._rightBounds = config.Screen.WIDTH - this.width;
         }

@@ -19,7 +19,7 @@ module scenes {
     export class Play extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
         private _cosmos: objects.Cosmos;
-        private _island: objects.Island;
+        private _camera: objects.Camera;
         private _clouds: objects.Cloud[];
         private _cloudCount:number;
         private _player: objects.Player;
@@ -46,8 +46,8 @@ module scenes {
             this.addChild(this._cosmos);
 
             // added island to the scene
-            this._island = new objects.Island();
-            this.addChild(this._island);
+            this._camera = new objects.Camera();
+            this.addChild(this._camera);
 
             // added player to the scene
             this._player = new objects.Player();
@@ -69,7 +69,7 @@ module scenes {
         // PLAY Scene updates here
         public update(): void {
             this._cosmos.update();
-            this._island.update();
+            this._camera.update();
            
             this._player.update();
            
@@ -78,7 +78,7 @@ module scenes {
                 this._collision.check(cloud);
             });
             
-            this._collision.check(this._island);
+            this._collision.check(this._camera);
         }
         
         

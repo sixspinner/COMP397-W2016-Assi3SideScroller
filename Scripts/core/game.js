@@ -32,6 +32,8 @@ var assetData = [
     { id: "BackButton", src: "../../Assets/images/BackButton.png" },
     { id: "cosmos", src: "../../Assets/images/Background.png" },
     { id: "hubble", src: "../../Assets/images/GameHubble.png" },
+    { id: "trash", src: "../../Assets/images/Trash.png" },
+    { id: "camera", src: "../../Assets/images/Camera3.png" },
     { id: "island", src: "../../Assets/images/island.png" },
     { id: "cloud", src: "../../Assets/images/cloud.png" },
 ];

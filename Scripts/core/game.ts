@@ -38,6 +38,8 @@ var assetData:objects.Asset[] = [
     {id: "BackButton", src:"../../Assets/images/BackButton.png"},
     {id: "cosmos", src:"../../Assets/images/Background.png"},//---------background
     {id: "hubble", src:"../../Assets/images/GameHubble.png"}, //------------ player
+    {id: "trash", src:"../../Assets/images/Trash.png"}, //------------ Trash
+    {id: "camera", src:"../../Assets/images/Camera3.png"}, //------------ Camera
     {id: "island", src:"../../Assets/images/island.png"},
     {id: "cloud", src:"../../Assets/images/cloud.png"},
 ];

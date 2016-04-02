@@ -37,8 +37,8 @@ var scenes;
             this._cosmos = new objects.Cosmos();
             this.addChild(this._cosmos);
             // added island to the scene
-            this._island = new objects.Island();
-            this.addChild(this._island);
+            this._camera = new objects.Camera();
+            this.addChild(this._camera);
             // added player to the scene
             this._player = new objects.Player();
             this.addChild(this._player);
@@ -56,13 +56,13 @@ var scenes;
         Play.prototype.update = function () {
             var _this = this;
             this._cosmos.update();
-            this._island.update();
+            this._camera.update();
             this._player.update();
             this._clouds.forEach(function (cloud) {
                 cloud.update();
                 _this._collision.check(cloud);
             });
-            this._collision.check(this._island);
+            this._collision.check(this._camera);
         };
         return Play;
     }(objects.Scene));
